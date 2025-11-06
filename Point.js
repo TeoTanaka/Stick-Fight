@@ -4,12 +4,12 @@ class Point extends Vector2{
         this.mass = mass
     }
 
-    update(){
+    update(dt){
         this.render()
     }
     render(){
         fill(255)
-        ellipse(x,y,5,5)
+        ellipse(this.x,this.y,5,5)
 
     }
 
